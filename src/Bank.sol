@@ -3,6 +3,7 @@ pragma solidity 0.8.29;
 
 contract Bank {
     error Unauthorized();
+    error ZeroAddress();
     error WithdrawUnsuccessful(uint256);
     error InvalidAmount();
     error InsufficientBalance(uint256);
@@ -37,6 +38,7 @@ contract Bank {
 
     function transfer(address _to, uint256 _amount) external {
         if (balances[msg.sender] < _amount) revert InsufficientBalance(balances[msg.sender]);
+        if (_to == address(0)) revert ZeroAddress();
         balances[msg.sender] -= _amount;
         balances[_to] += _amount;
     }
