@@ -14,6 +14,7 @@ Run `mox test` to run the Vyper tests.  ([Moccasin installation])
 | [CommunityChest.sol](src/CommunityChest.sol) | An update to the smart contract from [programtheblockchain's CommunityChest] |
 | [TipJar.sol](src/TipJar.sol)                 | An update to the smart contract from [programtheblockchain's TipJar]         |
 | [Bank.sol](src/Bank.sol)                     | An update to the smart contract from [programtheblockchain's Bank]           |
+| [Savings.sol](src/Savings.sol)               | An update to the smart contract from [programtheblockchain's Savings]        |
 
 [Foundry installation]: https://book.getfoundry.sh/getting-started/installation
 [Moccasin installation]: https://cyfrin.github.io/moccasin/installing_moccasin.html
